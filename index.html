@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html data-theme="cupcake" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B8A3 Fruit Burst Website</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <!-- Google fonts Lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- DaisyUI and TailwindCSS cdn link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Styles overall -->
+  <style>
+    .lato-fonts {
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Header section start -->
+  <header>
+    <!-- Nav section start -->
+    <nav class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5">
+      <div class="navbar lg:bg-[#F85559] md:bg-redAccent rounded-full">
+        <div class="navbar-start hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-lg font-normal text-[White]">
+            <li><a>Home</a></li>
+            <li><a>About us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="navbar-center">
+          <img src="images/logo.png" class="w-full md:w-1/2" alt="">
+          <a class="btn btn-ghost normal-case text-xl md:text-4xl font-bold text-headerText md:text-[#121212]">Fruit
+            Brust</a>
+        </div>
+        <div class="navbar-end">
+          <div class="relative hidden lg:block mr-5">
+            <input type="text" placeholder="Search" class="input input-bordered rounded-full w-80 max-w-xl" />
+            <button class="btn-circle absolute translate-x-[-100%] ">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
+          </div>
+          <div class="dropdown">
+            <ul tabindex="0"
+              class="menu menu-md dropdown-content rounded-xl mt-3 z-[1] lg:hidden translate-x-[-50%] bg-white p-2 text-lg font-normal">
+              <li><a class="whitespace-nowrap">Home</a></li>
+              <li><a class="whitespace-nowrap">About Us</a></li>
+              <li><a class="whitespace-nowrap">Shop</a></li>
+              <li><a class="whitespace-nowrap">All Fruits</a></li>
+              <li>
+                <div class="relative">
+                  <input type="text" placeholder="Search" class="input input-bordered rounded-full w-24" />
+                  <button class="btn-circle absolute translate-x-[170%]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                  </button>
+                </div>
+              </li>
+            </ul>
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none">
+                <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#121212" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </label>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Nav section end -->
+
+    <!-- Banner Container -->
+    <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 mb-10 lg:mb-[-70px]">
+      <div class="carousel h-[250px] md:h-[500px] rounded-lg relative">
+        <!-- slider 1 -->
+        <div id="slide1" class="carousel-item relative w-full">
+          <div class="absolute bg-gradient-to-b from-black w-full h-full rounded-lg"></div>
+          <div
+            class="absolute w-full h-full flex flex-col gap-1 md:gap-6 justify-center items-center text-center text-white">
+            <h1 class="text-xl lg:text-6xl font-bold">Exotic tastes at your<br>doorstep</h1>
+            <p>We supply highly quality organic products</p>
+            <div class="btn border-none bg-[#F85559] hover:text-[#F85559] text-white">Shop Now</div>
+          </div>
+          <img src="images/banner1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- slider 2 -->
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="images/banner2.png" class="w-full" />
+          <div class="absolute bg-gradient-to-b from-black w-full h-full rounded-lg"></div>
+          <div
+            class="absolute w-full h-full flex flex-col gap-1 md:gap-6 justify-center items-center text-center text-white">
+            <h1 class="text-xl lg:text-6xl font-bold">Exotic tastes at your<br>doorstep</h1>
+            <p>We supply highly quality organic products</p>
+            <div class="btn border-none bg-[#F85559] hover:text-[#F85559] text-white">Shop Now</div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- slider 3 -->
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="images/banner3.png" class="w-full" />
+          <div class="absolute bg-gradient-to-b from-black w-full h-full rounded-lg"></div>
+          <div
+            class="absolute w-full h-full flex flex-col gap-1 md:gap-6 justify-center items-center text-center text-white">
+            <h1 class="text-xl lg:text-6xl font-bold">Exotic tastes at your<br>doorstep</h1>
+            <p>We supply highly quality organic products</p>
+            <div class="btn border-none bg-[#F85559] hover:text-[#F85559] text-white">Shop Now</div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- slider 4 -->
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="images/banner4.png" class="w-full" />
+          <div class="absolute bg-gradient-to-b from-black w-full h-full rounded-lg"></div>
+          <div
+            class="absolute w-full h-full flex flex-col gap-1 md:gap-6 justify-center items-center text-center text-white">
+            <h1 class="text-xl lg:text-6xl font-bold">Exotic tastes at your<br>doorstep</h1>
+            <p>We supply highly quality organic products</p>
+            <div class="btn border-none bg-[#F85559] hover:text-[#F85559] text-white">Shop Now</div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      <!-- featured fruit -->
+      <div class="mx-10 bg-white py-10 rounded-lg shadow-lg hidden lg:flex justify-center gap-10 translate-y-[-50%]">
+        <div class="flex flex-col items-center">
+          <img src="images/fruit1.png" alt="">
+          <p class="text-xl font-medium text-gray1">Grape</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="images/fruit2.png" alt="">
+          <p class="text-xl font-medium text-gray1">Orange</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="images/fruit3.png" alt="">
+          <p class="text-xl font-medium text-gray1">Mango</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="images/fruit4.png" alt="">
+          <p class="text-xl font-medium text-gray1">Strawberry</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="images/fruit5.png" alt="">
+          <p class="text-xl font-medium text-gray1">Pomegranate</p>
+        </div>
+      </div>
+    </section>
+  </header>
+  <!-- Header section end -->
+
+  <!-- Main section start -->
+  <main>
+    <!-- Deal of the day Start -->
+    <section class="container mx-auto  max-w-screen-xl  px-8 md:px-16 lg:px-24 py-5 mb-10 lg:mb-[-70px]">
+      <div class="flex flex-col gap-5 md:flex-row justify-between items-center mb-20">
+        <div class="space-y-4">
+          <h1 class="text-3xl font-extrabold text-center lg:text-left md:text-center">Deal of the day</h1>
+          <p class="text-[#121212] max-w-2xl mx-auto mt-5 lg:text-left md:text-center ">Contrary to popular belief, is
+            not simply random
+            text. It has
+            roots
+            in a
+            piece
+            of classical
+            Latin
+            literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+
+        <!-- Time Date section -->
+        <div class="grid grid-flow-col gap-3 text-center auto-cols-max items-center">
+          <div class="flex flex-col justify-center items-center gap-2">
+            <p class="text-4xl font-extrabold">29</p>
+            <p class="text-[#121212]">Days</p>
+          </div>
+          <img class="mb-5" src="images/Frame.png" alt="">
+
+
+          <div class="flex flex-col justify-center items-center gap-2">
+            <p class="text-4xl font-extrabold">15</p>
+            <p class="text-[#121212]">Hours</p>
+          </div>
+          <img class="mb-5" src="images/Frame.png" alt="">
+
+          <div class="flex flex-col justify-center items-center gap-2">
+            <p class="text-4xl font-extrabold">25</p>
+            <p class="text-[#121212]">Minutes</p>
+          </div>
+          <img class="mb-5" src="images/Frame.png" alt="">
+
+          <div class="flex flex-col justify-center items-center gap-2">
+            <p class="text-4xl font-extrabold">08</p>
+            <p class="text-[#121212]">Seconds</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Fruit Details  -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-5 lg:mb-12">
+
+        <!-- Card 1 -->
+        <div class="card bg-base-100 border border-inherit">
+          <figure class="px-10 pt-10">
+            <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+
+            <hr class="border-b-1 w-52 mb-6">
+            </hr>
+
+            <p class="mb-6">Apples</p>
+
+            <div class="rating mb-8">
+              <img src="images/rating.png" alt="">
+            </div>
+
+            <!-- Modals -->
+            <!-- The button to open modal -->
+            <label for="my_modal_6" class="btn btn-ghost text-[#F85559] ">Details</label>
+
+            <!-- Put this part before -->
+            <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+            <div class="modal">
+              <div class="modal-box">
+                <!-- Try 2 start -->
+                <div class="card">
+                  <figure class="px-10 pt-10">
+                    <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title">Apple</h2>
+                    <p>Apples: Fiber-rich, vitamins, minerals, low-calorie, and delicious fruit.
+                    </p>
+                    <!-- Rating -->
+                    <div class="rating">
+                      <img src="images/rating.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Try 2 close -->
+                <div class="modal-action">
+                  <label for="my_modal_6" class="btn btn-outline border-[#F85559]">Close</label>
+                  <label for="my_modal_6" class="btn bg-[#F85559]">Buy Now</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Card 2 -->
+        <div class="card bg-base-100 border border-inherit ">
+          <figure class="px-10 pt-10">
+            <img src="images/fruit7.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+
+            <hr class="border-b-1 w-52 mb-6">
+            </hr>
+
+            <p class="mb-6">Orange</p>
+
+            <div class="rating mb-8">
+              <img src="images/rating.png" alt="">
+            </div>
+
+            <!-- Modals -->
+            <!-- The button to open modal -->
+            <label for="my_modal_6" class="btn btn-ghost text-[#F85559]">Details</label>
+
+            <!-- Put this part before -->
+            <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+            <div class="modal">
+              <div class="modal-box">
+                <!-- Try 2 start -->
+                <div class="card">
+                  <figure class="px-10 pt-10">
+                    <img src="images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title">Orange</h2>
+                    <p>Oranges: Vitamin C, fiber, antioxidants, hydrating, refreshing, and citrus
+                      fruit.
+                    </p>
+                    <!-- Rating -->
+                    <div class="rating">
+                      <img src="images/rating.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Try 2 close -->
+                <div class="modal-action">
+                  <label for="my_modal_6" class="btn btn-outline border-[#F85559]">Close</label>
+                  <label for="my_modal_6" class="btn bg-[#F85559]">Buy Now</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card bg-base-100 border border-inherit">
+          <figure class="px-10 pt-10">
+            <img src="images/fruit8.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+
+            <hr class="border-b-1 w-52 mb-6">
+            </hr>
+
+            <p class="mb-6">Red Dragon</p>
+
+            <div class="rating mb-8">
+              <img src="images/rating.png" alt="">
+            </div>
+
+            <!-- Modals -->
+            <!-- The button to open modal -->
+            <label for="my_modal_6" class="btn btn-ghost text-[#F85559]">Details</label>
+
+            <!-- Put this part before -->
+            <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+            <div class="modal">
+              <div class="modal-box">
+                <!-- Try 2 start -->
+                <div class="card">
+                  <figure class="px-10 pt-10">
+                    <img src="images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title">Red Dragon</h2>
+                    <p>Dragons: Mythical creatures, often depicted with wings, fire-breathing, and
+                      powerful.
+                    </p>
+                    <!-- Rating -->
+                    <div class="rating">
+                      <img src="images/rating.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Try 2 close -->
+                <div class="modal-action">
+                  <label for="my_modal_6" class="btn btn-outline border-[#F85559]">Close</label>
+                  <label for="my_modal_6" class="btn bg-[#F85559]">Buy Now</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card bg-base-100 border border-inherit">
+          <figure class="px-10 pt-10">
+            <img src="images/fruit9.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+
+            <hr class="border-b-1 w-52 mb-6">
+            </hr>
+
+            <p class="mb-6">Banana</p>
+
+            <div class="rating mb-8">
+              <img src="images/rating.png" alt="">
+            </div>
+
+            <!-- Modals -->
+            <!-- The button to open modal -->
+            <label for="my_modal_6" class="btn btn-ghost text-[#F85559]">Details</label>
+
+            <!-- Put this part before -->
+            <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+            <div class="modal">
+              <div class="modal-box">
+                <!-- Try 2 start -->
+                <div class="card">
+                  <figure class="px-10 pt-10">
+                    <img src="images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title">Banana</h2>
+                    <p>Bananas: Potassium, vitamin B6, fiber, energy, convenient, and nutrient-dense
+                      fruit.
+                    </p>
+                    <!-- Rating -->
+                    <div class="rating">
+                      <img src="images/rating.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Try 2 close -->
+                <div class="modal-action">
+                  <label for="my_modal_6" class="btn btn-outline border-[#F85559]">Close</label>
+                  <label for="my_modal_6" class="btn bg-[#F85559]">Buy Now</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <button class="btn bg-[#F85559] hover:text-[#F85559] text-white mb-6 lg:mb-36">Shop All</button>
+      </div>
+      <!-- Fruit Details end -->
+
+    </section>
+    <!-- Deal of the day end -->
+
+
+    <!-- Team section (start) -->
+    <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 mb-10">
+      <div class="hero md:h-[650px] rounded-lg bg-[url('./images/team.png')]">
+        <div class="hero-overlay rounded-lg bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-max">
+            <h1 class="mb-5 text-3xl md:text-5xl font-extrabold text-[White]">Meet the team <span
+                class="hidden md:inline-block">section</span></h1>
+            <p class="mb-5 max-w-xl mx-auto text-base font-medium text-[White]">Contrary to popular belief, is
+              not
+              simply
+              random text. It has roots in a piece of
+              classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            <div class="flex flex-col items-center md:flex-row md:flex-wrap lg:gap-10 justify-around p-10">
+              <div class="flex flex-col items-center w-50">
+                <img class="h-36 w-36" src="images/member1.png" alt="">
+                <h1 class="text-2xl font-bold text-[White]  pb-3">Awlad Hossain</h1>
+                <h3 class="pb-3">Fruits Expert</h3>
+                <div class="grid grid-flow-col space-x-3">
+                  <img class="rounded-full" src="images/facebook1.png" alt="">
+
+                  <img class="rounded-full" src="images/twitter1.png" alt="">
+
+                  <img class="rounded-full" src="images/linkedin1.png" alt="">
+                </div>
+              </div>
+              <div class="flex flex-col items-center w-50">
+                <img class="h-36 w-36" src="images/member2.png" alt="">
+                <h1 class="text-2xl font-bold text-[White] pb-3">Safia Chowdhury</h1>
+                <h3 class="pb-3">Fruits Expert</h3>
+                <div class="grid grid-flow-col space-x-3">
+                  <img class="rounded-full" src="images/facebook1.png" alt="">
+
+                  <img class="rounded-full" src="images/twitter1.png" alt="">
+
+                  <img class="rounded-full" src="images/linkedin1.png" alt="">
+                </div>
+              </div>
+              <div class="flex flex-col items-center w-50 lg:mt-2 md:mt-2">
+                <img class="h-36 w-36" src="images/member3.png" alt="">
+                <h1 class="text-2xl font-bold text-[White] pb-3">Rokib Hossain</h1>
+                <h3 class="pb-3"> Fruits Expert</h3>
+                <div class="grid grid-flow-col space-x-3">
+                  <img class="rounded-full" src="images/facebook1.png" alt="">
+
+                  <img class="rounded-full" src="images/twitter1.png" alt="">
+
+                  <img class="rounded-full" src="images/linkedin1.png" alt="">
+                </div>
+              </div>
+              <div class="flex flex-col items-center w-50">
+                <img class="h-36 w-36" src="images/member4.png" alt="">
+                <h1 class="text-2xl font-bold text-[White] pb-3">Chaity</h1>
+                <h3 class="pb-3">Fruits Expert</h3>
+                <div class="grid grid-flow-col space-x-3">
+                  <img class="rounded-full" src="images//facebook1.png" alt="">
+
+                  <img class="rounded-full" src="images/twitter1.png" alt="">
+
+                  <img class="rounded-full" src="images/linkedin1.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Team section end -->
+
+    <!-- why you choose us start-->
+    <div
+      class="flex flex-col gap-6 justify-center items-center text-center mb-16 md:mb-24 lg:mb-36 max-w-screen-xl mx-auto px-6 md:px-16 lg:px-24 py-5 ">
+      <h1 class="text-5xl font-bold">Why Choose Us</h1>
+      <p class="text-[#121212]">Contrary to popular belief, is not simply random text. It has roots in a piece of
+        classical<br> Latin literature from 45 BC, making it over 2000 years old.</p>
+      <div class="grid grid-cols-1 lg:grid-cols-3 order-2 lg:order-1 gap-4">
+        <div class="flex flex-col gap-12">
+          <div class="flex flex-col lg:flex-row gap-6 items-center lg:items-start">
+            <div><img src="images/1.png" alt=""></div>
+            <div class="flex flex-col items-center lg:items-start text-center lg:text-left gap-2">
+              <h3 class="text-2xl font-bold">Dedicated Team</h3>
+              <hr class="w-24 border-black">
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+          <div class="flex flex-col lg:flex-row gap-6 items-center lg:items-start">
+            <div><img src="images/2.png" alt=""></div>
+            <div class="flex flex-col items-center lg:items-start text-center lg:text-left gap-2">
+              <h3 class="text-2xl font-bold">Fresh is Best</h3>
+              <hr class="w-24 border-black">
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+          <div class="flex flex-col lg:flex-row gap-6 items-center lg:items-start">
+            <div><img src="images/3.png" alt=""></div>
+            <div class="flex flex-col items-center lg:items-start text-center lg:text-left gap-2">
+              <h3 class="text-2xl font-bold">Gift Certificates</h3>
+              <hr class="w-24 border-black">
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto -order-1 lg:order-2">
+          <img src="images/whychoose1.png" alt="" class="p-2">
+        </div>
+        <div class="flex flex-col gap-12 order-3">
+          <div class="flex flex-col lg:flex-row-reverse gap-6 items-center lg:items-start">
+            <div><img src="images/4.png" alt=""></div>
+            <div class="flex flex-col items-center lg:items-end text-center lg:text-end gap-2">
+              <h3 class="text-2xl font-bold">Integrated Supplier</h3>
+              <hr class="w-24 border-black">
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+          <div class="flex flex-col lg:flex-row-reverse gap-6 items-center lg:items-start">
+            <div><img src="images/5.png" alt=""></div>
+            <div class="flex flex-col items-center lg:items-end text-center lg:text-end gap-2">
+              <h3 class="text-2xl font-bold">Sustainable Practice</h3>
+              <hr class="w-24 border-black">
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+          <div class="flex flex-col lg:flex-row-reverse gap-6 items-center lg:items-start">
+            <div><img src="images/6.png" alt=""></div>
+            <div class="flex flex-col items-center lg:items-end text-center lg:text-end gap-2">
+              <h3 class="text-2xl font-bold">The Benefits Only</h3>
+              <hr class="w-24 border-black">
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- why you choose us end-->
+  </main>
+<!-- Main section end -->
+
+<!-- Footer start -->
+  <footer class="footer footer-center py-36 mx-0 md:px-10 bg-[#121212] text-[white]">
+    <div class="space-y-5">
+      <div class="flex items-center gap-3">
+        <img src="images/logo.png" alt="">
+        <h1 class="text-4xl font-bold text-[White]">Fruit Brust</h1>
+      </div>
+      <ul class="flex flex-wrap justify-center gap-10 text-base font-bold text-[White]">
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Shop</a></li>
+        <li><a href="">All Fruits</a></li>
+        <li class="col-span-2 md:col-auto"><a href="">Support</a></li>
+        <li class="col-span-2 md:col-auto"><a href="">My Account</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="grid grid-flow-col gap-5 md:gap-10">
+        <a><img src="images/twitter.png" alt=""></a>
+        <a><img src="images/facebook.png" alt=""></a>
+        <a><img src="images/youtube.png" alt=""></a>
+        <a><img src="images/linkedin.png" alt=""></a>
+        <a><img src="images/instagram.png" alt=""></a>
+        <a><img src="images/apple.png" alt=""></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Footer end -->
+
+</body>
+
+</html>
